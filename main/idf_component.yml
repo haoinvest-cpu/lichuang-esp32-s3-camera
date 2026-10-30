@@ -1,0 +1,8 @@
+## IDF Component Manager Manifest File
+dependencies:
+  idf:
+    version: ">=5.4"
+  # esp32-camera：GC0308 唯一驱动源（Apache-2.0），见 FACTS.md 第 1 节
+  espressif/esp32-camera: "^2.1.8"
+  # ES8311 播放通道（快门声）：与 Muse 定版固件同版本线
+  espressif/esp_codec_dev: "~1.5"

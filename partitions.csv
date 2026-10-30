@@ -1,0 +1,6 @@
+﻿# 16 MB flash / 8 MB PSRAM (N16R8)
+# app 分区给到 4 MB：相机 + esp32-camera 组件大约 1.1 MB，留足余量。
+# Name,   Type, SubType, Offset,  Size, Flags
+nvs,      data, nvs,     0x9000,  0x6000,
+phy_init, data, phy,     0xf000,  0x1000,
+factory,  app,  factory, 0x10000, 0x400000,
